@@ -1,0 +1,49 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "sheep-jump",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.7,
+  "sample": 30,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "68132287-e08c-4d16-bf43-55a5078fcbbd"
+            }
+          },
+          {
+            "frame": 0.16666666666666666,
+            "value": {
+              "__uuid__": "f9c42526-e073-416e-9ec4-ca01dc29aae6"
+            }
+          },
+          {
+            "frame": 0.3333333333333333,
+            "value": {
+              "__uuid__": "8e1ae478-7cf8-4a0d-8fb1-33c3f2b31890"
+            }
+          },
+          {
+            "frame": 0.5,
+            "value": {
+              "__uuid__": "52c0726f-35a7-413a-b772-3bdfeec91e0b"
+            }
+          },
+          {
+            "frame": 0.6666666666666666,
+            "value": {
+              "__uuid__": "7fd6cf51-fadd-4071-be22-be7917347833"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}
