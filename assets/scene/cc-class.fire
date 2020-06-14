@@ -1457,8 +1457,8 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        480,
-        320,
+        0,
+        0,
         0,
         0,
         0,
@@ -1517,13 +1517,11 @@
       "__id__": 34
     },
     "_enabled": true,
-    "limitNum": 0,
-    "percent": 10,
     "_id": "9daffDp5dEuYIkTlUJAhJB"
   },
   {
     "__type__": "cc.Node",
-    "_name": "cc-touch",
+    "_name": "cc-properties",
     "_objFlags": 0,
     "_parent": {
       "__id__": 1
@@ -1558,7 +1556,7 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        480,
+        0,
         0,
         0,
         0,
@@ -1581,17 +1579,39 @@
     "_is3DNode": false,
     "_groupIndex": 0,
     "groupIndex": 0,
-    "_id": "031RtnFo9BdqPKff70ASXH"
+    "_id": "c3uISRJ/1GQrfmkNuDdL/Y"
   },
   {
-    "__type__": "4b39cmJ781D/LuIu+5BYD/T",
+    "__type__": "cb2a6Q3P6FFmoDS+0ReeSI0",
     "_name": "",
     "_objFlags": 0,
     "node": {
       "__id__": 37
     },
     "_enabled": true,
-    "targetNode": null,
-    "_id": "1f4hZuU5NAwLetfxwwbdpH"
+    "summary": "概要",
+    "limitNum": 0,
+    "percent": 10,
+    "pos": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "eventHandler": {
+      "__id__": 39
+    },
+    "audioClip": null,
+    "sex": 1,
+    "age": 18,
+    "friendArr": [],
+    "_id": "9d6zpeZxVFsaf65bC1lvor"
+  },
+  {
+    "__type__": "cc.ClickEvent",
+    "target": null,
+    "component": "",
+    "_componentId": "",
+    "handler": "",
+    "customEventData": ""
   }
 ]
