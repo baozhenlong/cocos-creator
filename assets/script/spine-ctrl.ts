@@ -55,7 +55,7 @@ export default class SpineCtrl extends cc.Component {
     private _preview: boolean = false;
     @property({
         displayName: '预览',
-        tooltip: '在编辑器模式预览动画，启用后，自动播放动画'
+        tooltip: '在编辑器模式预览动画, 启用后, 自动播放动画'
     })
     set preview(value: boolean) {
         this._preview = value;
@@ -173,7 +173,7 @@ export default class SpineCtrl extends cc.Component {
             spineComp.setSkin(skin);
         }
         spineComp.setAnimation(trackIndex, animName, loop);
-        // // 用来设置动画播放完后的事件监听，REALTIME 实时模式下不生效
+        // // 用来设置动画播放完后的事件监听, REALTIME 实时模式下不生效
         // spineComp.setEndListener(() => {
         //     cc.log('setEndListener');
         // });

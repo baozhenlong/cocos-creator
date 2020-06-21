@@ -59,13 +59,13 @@ export default class AnimClipCtrl extends cc.Component {
         let animState: cc.AnimationState = this._anim.play(name);
         if (repeatCount !== undefined) {
             // Memo repeatCount 和 wrapMode 会相互影响
-            // 当设置 wrapMode 设为 循环时， repeatCount 失效
-            // 当设置 repeatCount 时，wrapMode 循环会失效
+            // 当设置 wrapMode 设为 循环时,  repeatCount 失效
+            // 当设置 repeatCount 时, wrapMode 循环会失效
             animState.repeatCount = repeatCount;
         }
         if (callback instanceof Function) {
             if (animState.repeatCount === Infinity) {
-                // 动画播放到最后一帧时触发，当 repeatCount 为 Infinity 或 <= 1 时，不触发
+                // 动画播放到最后一帧时触发, 当 repeatCount 为 Infinity 或 <= 1 时, 不触发
                 this._anim.once(cc.Animation.EventType.LASTFRAME, () => {
                     callback(name);
                 });
@@ -79,7 +79,7 @@ export default class AnimClipCtrl extends cc.Component {
     }
 
     /**
-     * 主动停止，不会触发完成事件
+     * 主动停止, 不会触发完成事件
      *
      * @memberof AnimClipCtrl
      */

@@ -13,8 +13,16 @@ export default class CCScaleSize extends cc.Component {
         displayName: '节点自身大小',
         tooltip: '不受该节点是否被缩放或者旋转的影响'
     })
-    set size(value: cc.Size) {
-        this.node.setContentSize(value);
+    set size(size: cc.Size) {
+        let random: number = Math.random();
+        if (random < 1 / 3) {
+            this.node.setContentSize(size);
+        } else if (random > 2 / 3) {
+            this.node.setContentSize(size.width, size.height);
+        } else {
+            this.node.width = size.width;
+            this.node.height = size.height;
+        }
         this._printData();
     }
     get size(): cc.Size {
@@ -31,7 +39,16 @@ export default class CCScaleSize extends cc.Component {
         tooltip: '影响所有子节点'
     })
     set scale(value: number) {
-        this.node.scale = value;
+        let random: number = Math.random();
+        if (random < 1 / 4) {
+            this.node.scale = value;
+        } else if (random < 2 / 4) {
+            this.node.setScale(value);
+        } else if (random < 3 / 4) {
+            this.node.setScale(value, value);
+        } else {
+            this.node.setScale(cc.v2(value, value));
+        }
         this._printData();
     }
     get scale(): number {

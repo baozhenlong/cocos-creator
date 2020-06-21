@@ -58,7 +58,7 @@
     "_groupIndex": 0,
     "groupIndex": 0,
     "autoReleaseAssets": false,
-    "_id": "e05b2d6c-addb-4b73-98b9-1ec761d78a14"
+    "_id": "f79240ab-83e7-475a-a3cd-d3ff77f3143c"
   },
   {
     "__type__": "cc.Node",
@@ -127,7 +127,7 @@
     "_is3DNode": false,
     "_groupIndex": 0,
     "groupIndex": 0,
-    "_id": "aejC91u6pHXblhq+KLE4jp"
+    "_id": "b0xKjRnzxJXbb/ziGJOM4l"
   },
   {
     "__type__": "cc.Node",
@@ -168,7 +168,7 @@
       "array": [
         0,
         0,
-        536.9357503463519,
+        168.87495373796554,
         0,
         0,
         0,
@@ -189,7 +189,7 @@
     "_is3DNode": false,
     "_groupIndex": 0,
     "groupIndex": 0,
-    "_id": "6bMpnVCMFK6awmR46EfwxQ"
+    "_id": "a77Gu/Xf9IFaV+rR+oBKVb"
   },
   {
     "__type__": "cc.Camera",
@@ -225,25 +225,22 @@
     },
     "_renderStages": 1,
     "_alignWithScreen": true,
-    "_id": "69YDa5uFZNgo5Bf7UZXUBv"
+    "_id": "17G0PxHcZFN5jLw4+YDB0s"
   },
   {
     "__type__": "cc.Node",
-    "_name": "star",
+    "_name": "node",
     "_objFlags": 0,
     "_parent": {
       "__id__": 2
     },
-    "_children": [],
-    "_active": true,
-    "_components": [
+    "_children": [
       {
         "__id__": 6
-      },
-      {
-        "__id__": 7
       }
     ],
+    "_active": true,
+    "_components": [],
     "_prefab": null,
     "_opacity": 255,
     "_color": {
@@ -255,8 +252,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 169,
-      "height": 201
+      "width": 0,
+      "height": 0
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -290,50 +287,109 @@
     "_is3DNode": false,
     "_groupIndex": 0,
     "groupIndex": 0,
-    "_id": "6c3PAYTIdAqbKOjej/4pDU"
+    "_id": "c0qk+ojg1Hur2WfWGW7I5R"
   },
   {
-    "__type__": "cc.Sprite",
-    "_name": "",
+    "__type__": "cc.Node",
+    "_name": "cc-lifecycle",
     "_objFlags": 0,
-    "node": {
+    "_parent": {
       "__id__": 5
     },
-    "_enabled": true,
-    "_materials": [
+    "_children": [],
+    "_active": true,
+    "_components": [
       {
-        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        "__id__": 7
       }
     ],
-    "_srcBlendFactor": 770,
-    "_dstBlendFactor": 771,
-    "_spriteFrame": {
-      "__uuid__": "430aa928-e0bd-4b9b-bb22-b5bb975dad4a"
+    "_prefab": null,
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
     },
-    "_type": 0,
-    "_sizeMode": 2,
-    "_fillType": 0,
-    "_fillCenter": {
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 0,
+      "height": 0
+    },
+    "_anchorPoint": {
       "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
+      "x": 0.5,
+      "y": 0.5
     },
-    "_fillStart": 0,
-    "_fillRange": 0,
-    "_isTrimmedMode": false,
-    "_atlas": null,
-    "_id": "5a+emvMRZIWI3U8EWBbBDi"
+    "_trs": {
+      "__type__": "TypedArray",
+      "ctor": "Float64Array",
+      "array": [
+        -480,
+        -320,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_is3DNode": false,
+    "_groupIndex": 0,
+    "groupIndex": 0,
+    "_id": "3ecANC0qVEEbhbZ4vursf/"
   },
   {
-    "__type__": "525230FUJNDpbFWXXUrdq58",
+    "__type__": "6d5666RpqtLQ6v/mscTleqe",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 5
+      "__id__": 6
     },
-    "_enabled": true,
-    "speed": 100,
-    "_id": "4cax+4stdA2oDP9cDZd23I"
+    "_enabled": false,
+    "summaryDescArr": [
+      "onLoad -> onEnable -> start -> update -> lateUpdate -> onDisable -> onDestroy"
+    ],
+    "onLoadDescArr": [
+      "onLoad 会在节点首次激活(activeInHierarchy = true)时触发(组件 enabled true 或 false 都会触发)",
+      "onLoad 总是会在任何 start 方法调用前执行",
+      "最多只会被调用一次"
+    ],
+    "onDestroyDescArr": [],
+    "startDescArr": [
+      "start 会在节点首次激活(activeInHierarchy 为 true 且组件 enabled 为 true)时触发",
+      "当 enabled 为 true, 且 start 未被调用过时触发",
+      "最多只会被调用一次"
+    ],
+    "onEnableDescArr": [
+      "当 activeInHierarchy 从 false 变为 true, 且组件的 enabled 属性为 true 时调用",
+      "当组件的 enabled 属性从 false 变为 true, 且 activeInHierarchy 为 true 时调用",
+      "当所在节点的 active 属性从 false 变为 true, 且 activeInHierarchy, enabled 都为 true 时调用"
+    ],
+    "onDisableDescArr": [
+      "当 activeInHierarchy 从 true 变为 false, 且组件的 enabled 属性为 true 时调用",
+      "当组件的 enabled 属性从 true 变为 false, 且 activeInHierarchy 为 true 时调用",
+      "当所在节点的 active 属性从 true 变为 false, 且 activeInHierarchy, enabled 都为 true 时调用"
+    ],
+    "updateDescArr": [
+      "每一帧渲染前调用"
+    ],
+    "lastUpdateDescArr": [
+      "所有组件的 update 都执行完之后才调用"
+    ],
+    "_id": "e26F65y/VM/KhN2fANiADl"
   },
   {
     "__type__": "cc.Canvas",
@@ -350,6 +406,6 @@
     },
     "_fitWidth": false,
     "_fitHeight": true,
-    "_id": "36XiSd4blEOooYdERxGwEA"
+    "_id": "84sizGJjpHPbbuXNZFUCbc"
   }
 ]

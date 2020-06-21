@@ -33,7 +33,7 @@ export default class DragonBonesCtrl extends cc.Component {
     private _preview: boolean = false;
     @property({
         displayName: '预览',
-        tooltip: '在编辑器模式预览动画，启用后，自动播放动画'
+        tooltip: '在编辑器模式预览动画, 启用后, 自动播放动画'
     })
     set preview(value: boolean) {
         this._preview = value;
@@ -178,7 +178,7 @@ export default class DragonBonesCtrl extends cc.Component {
     }
 
     /**
-     * 动画播放完成回调，循环播放动画时不触发
+     * 动画播放完成回调, 循环播放动画时不触发
      *
      * @private
      * @memberof DragonBonesCtrl
@@ -190,7 +190,7 @@ export default class DragonBonesCtrl extends cc.Component {
     }
 
     /**
-     * 动画循环播放完成一次回调，循环与否都触发
+     * 动画循环播放完成一次回调, 循环与否都触发
      *
      * @private
      * @memberof DragonBonesCtrl
@@ -244,7 +244,7 @@ export default class DragonBonesCtrl extends cc.Component {
     private _updateFrameByPercent(percent: number): void {
         if (CC_EDITOR) {
             let armature: dragonBones.Armature = this._getDragonBonesComp().armature();
-            // 当节点的 active 为 false 时，armature 为 undefined
+            // 当节点的 active 为 false 时, armature 为 undefined
             let animation: dragonBones.Animation = armature.animation;
             if (animation) {
                 let animationState: dragonBones.AnimationState = animation.lastAnimationState;

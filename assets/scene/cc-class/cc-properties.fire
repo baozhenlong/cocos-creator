@@ -329,6 +329,8 @@
     "sex": 1,
     "age": 18,
     "friendArr": [],
+    "json": null,
+    "text": null,
     "_id": "b9KP/mXMZOy51LMhsr1Y3x"
   },
   {
