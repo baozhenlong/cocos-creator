@@ -4,9 +4,25 @@ const { ccclass, property } = cc._decorator;
 export default class CCKeyboard extends cc.Component {
 
     @property({
-        displayName: '速度'
+        type: [cc.String],
+        displayName: '键盘事件',
+        readonly: true
     })
-    speed: number = 100;
+    descArr: string[] = [
+        'KEY_DOWN: 键盘按下',
+        'KEY_UP: 键盘释放'
+    ];
+
+    @property({
+        type: cc.Node,
+        displayName: '星星节点'
+    })
+    starNode: cc.Node = null;
+
+    @property({
+        displayName: '星星速度'
+    })
+    starSpeed: number = 100;
 
     private _up: boolean = false;
 
@@ -15,10 +31,6 @@ export default class CCKeyboard extends cc.Component {
     private _left: boolean = false;
 
     private _right: boolean = false;
-
-    onLoad() {
-
-    }
 
     onEnable() {
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_UP, this._onKeyUp, this);
@@ -88,7 +100,7 @@ export default class CCKeyboard extends cc.Component {
 
     private _getNextX(delta: number): number {
         let width: number = cc.winSize.width;
-        let nextX: number = this.node.x + delta;
+        let nextX: number = this.starNode.x + delta;
         if (nextX < -width / 2) {
             nextX = -width / 2;
         } else if (nextX > width / 2) {
@@ -99,7 +111,7 @@ export default class CCKeyboard extends cc.Component {
 
     private _getNextY(delta: number): number {
         let height: number = cc.winSize.height;
-        let nextY: number = this.node.y + delta;
+        let nextY: number = this.starNode.y + delta;
         if (nextY < -height / 2) {
             nextY = -height / 2;
         } else if (nextY > height / 2) {
@@ -110,16 +122,16 @@ export default class CCKeyboard extends cc.Component {
 
     update(dt: number) {
         if (this._up) {
-            this.node.y = this._getNextY(this.speed * dt);
+            this.starNode.y = this._getNextY(this.starSpeed * dt);
         }
         if (this._down) {
-            this.node.y = this._getNextY(-this.speed * dt);
+            this.starNode.y = this._getNextY(-this.starSpeed * dt);
         }
         if (this._left) {
-            this.node.x = this._getNextX(-this.speed * dt);
+            this.starNode.x = this._getNextX(-this.starSpeed * dt);
         }
         if (this._right) {
-            this.node.x = this._getNextX(this.speed * dt);
+            this.starNode.x = this._getNextX(this.starSpeed * dt);
         }
     }
 }
