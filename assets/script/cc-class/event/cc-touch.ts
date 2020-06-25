@@ -8,7 +8,7 @@ export default class CCSystemEvent extends cc.Component {
         displayName: '触摸事件',
         readonly: true
     })
-    descArr: string[] = [
+    summaryArr: string[] = [
         'touchstart: 当手指触点落在目标节点区域内',
         'touchmove: 当手指在屏幕上移动时',
         'touchend: 当手指在目标节点区域内离开屏幕时',

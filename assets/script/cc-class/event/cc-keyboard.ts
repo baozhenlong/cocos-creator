@@ -5,10 +5,10 @@ export default class CCKeyboard extends cc.Component {
 
     @property({
         type: [cc.String],
-        displayName: '键盘事件',
+        displayName: '概要',
         readonly: true
     })
-    descArr: string[] = [
+    summaryArr: string[] = [
         'KEY_DOWN: 键盘按下',
         'KEY_UP: 键盘释放'
     ];
