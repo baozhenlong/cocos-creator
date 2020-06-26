@@ -15,9 +15,12 @@
     "_children": [
       {
         "__id__": 2
+      },
+      {
+        "__id__": 6
       }
     ],
-    "_active": true,
+    "_active": false,
     "_components": [],
     "_prefab": null,
     "_opacity": 255,
@@ -58,7 +61,7 @@
     "_groupIndex": 0,
     "groupIndex": 0,
     "autoReleaseAssets": false,
-    "_id": "58dee5f0-cf81-43f4-8094-b44d6d67a720"
+    "_id": "77f089b1-06a6-4c00-bd07-5461d365d4d7"
   },
   {
     "__type__": "cc.Node",
@@ -70,15 +73,12 @@
     "_children": [
       {
         "__id__": 3
-      },
-      {
-        "__id__": 5
       }
     ],
     "_active": true,
     "_components": [
       {
-        "__id__": 8
+        "__id__": 5
       }
     ],
     "_prefab": null,
@@ -127,7 +127,7 @@
     "_is3DNode": false,
     "_groupIndex": 0,
     "groupIndex": 0,
-    "_id": "2bk1p2entCkYFw6RRO6DGs"
+    "_id": "450w5ZlGlEl6hb/EIbP4XD"
   },
   {
     "__type__": "cc.Node",
@@ -189,7 +189,7 @@
     "_is3DNode": false,
     "_groupIndex": 0,
     "groupIndex": 0,
-    "_id": "76HNoCi6tO/6hGw8zoVz/y"
+    "_id": "4e9rZnxfdM/JNIPeAyc+rC"
   },
   {
     "__type__": "cc.Camera",
@@ -225,21 +225,35 @@
     },
     "_renderStages": 1,
     "_alignWithScreen": true,
-    "_id": "813sZfw6FDfJZASPuwEXdT"
+    "_id": "a5yQAVgrNNjYJrMvLOp8ej"
+  },
+  {
+    "__type__": "cc.Canvas",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 2
+    },
+    "_enabled": true,
+    "_designResolution": {
+      "__type__": "cc.Size",
+      "width": 960,
+      "height": 640
+    },
+    "_fitWidth": false,
+    "_fitHeight": true,
+    "_id": "6c/oWCfh5HNbI6E4tBa1w9"
   },
   {
     "__type__": "cc.Node",
-    "_name": "star",
+    "_name": "cc-node-pool",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 2
+      "__id__": 1
     },
     "_children": [],
     "_active": true,
     "_components": [
-      {
-        "__id__": 6
-      },
       {
         "__id__": 7
       }
@@ -255,8 +269,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 169,
-      "height": 201
+      "width": 0,
+      "height": 0
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -267,8 +281,8 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        -10,
-        50,
+        0,
+        0,
         0,
         0,
         0,
@@ -290,65 +304,31 @@
     "_is3DNode": false,
     "_groupIndex": 0,
     "groupIndex": 0,
-    "_id": "76iB6ysZNDYJ2TkNSH+7tV"
+    "_id": "726yeNg0FCRoU2+hBG7dOu"
   },
   {
-    "__type__": "cc.Sprite",
+    "__type__": "79bf2XzzvlEWYWYrQiKv8kw",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 5
+      "__id__": 6
     },
     "_enabled": true,
-    "_materials": [
-      {
-        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
-      }
+    "summaryDescArr": [
+      "在运行时进行节点的创建(cc.instance)和销毁(node.destory)操作是非常耗费性能的",
+      "通常只有在场景初始化逻辑中才会进行节点的创建, 在切换场景时才会进行节点的销毁",
+      "通过对象池可以在游戏进行过程时随时创建和销毁节点",
+      "对象池是一组可回收的节点对象",
+      "将节点放入和从对象池取出的操作不会带来额外的内存管理开销",
+      "最好在切换场景或其他不再需要对象池的时候手动清空对象池",
+      "notice: 当获取和返回节点时, cc.NodePool 内部会不断地对节点执行 removeFromParent 和 addChild 操作",
+      "当大批量、频繁地操作对象池时, 在低端机器上可能仍然会引起卡顿",
+      "还会导致节点默认渲染顺序发生变化, 如有必要避免, 可以调用 setSiblingIndex 修改节点的索引"
     ],
-    "_srcBlendFactor": 770,
-    "_dstBlendFactor": 771,
-    "_spriteFrame": {
-      "__uuid__": "430aa928-e0bd-4b9b-bb22-b5bb975dad4a"
+    "tempalte": {
+      "__uuid__": "a31c5c69-a43c-4880-83d0-ece68a7e350f"
     },
-    "_type": 0,
-    "_sizeMode": 2,
-    "_fillType": 0,
-    "_fillCenter": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
-    },
-    "_fillStart": 0,
-    "_fillRange": 0,
-    "_isTrimmedMode": true,
-    "_atlas": null,
-    "_id": "f59VrjNhBIh5I4oVTljRQH"
-  },
-  {
-    "__type__": "04dafUSGA9ACZXTWtiZq/kE",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 5
-    },
-    "_enabled": true,
-    "_id": "f5IA/kKe9GE7AO5iefbS94"
-  },
-  {
-    "__type__": "cc.Canvas",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 2
-    },
-    "_enabled": true,
-    "_designResolution": {
-      "__type__": "cc.Size",
-      "width": 960,
-      "height": 640
-    },
-    "_fitWidth": false,
-    "_fitHeight": true,
-    "_id": "4fiSMLQzNBHp7NgB+d3KZ3"
+    "_nodePool": null,
+    "_id": "9fSt6zEDRBdIeJ8RmBQI8+"
   }
 ]
