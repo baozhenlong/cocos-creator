@@ -29,7 +29,8 @@ export default class CCEvent extends cc.Component {
     @property({
         type: [cc.String],
         displayName: 'dispatch 描述',
-        readonly: true
+        readonly: true,
+        multiline: true
     })
     dispatchDescArr: string[] = [
         '通过 dispatch 发射的事件, 会进入事件派送阶段(采用冒泡派送的方式)',

@@ -7,7 +7,8 @@ export default class CClifecycle extends cc.Component {
     @property({
         type: [cc.String],
         displayName: '概要',
-        readonly: true
+        readonly: true,
+        multiline: true
     })
     summaryDescArr: string[] = [
         'onLoad -> onEnable -> start -> update -> lateUpdate -> onDisable -> onDestroy'
@@ -16,7 +17,8 @@ export default class CClifecycle extends cc.Component {
     @property({
         type: [cc.String],
         displayName: 'onLoad 描述',
-        readonly: true
+        readonly: true,
+        multiline: true
     })
     onLoadDescArr: string[] = [
         'onLoad 会在节点首次激活(activeInHierarchy = true)时触发(组件 enabled true 或 false 都会触发)',
@@ -32,7 +34,8 @@ export default class CClifecycle extends cc.Component {
     @property({
         type: [cc.String],
         displayName: 'onDestroy 描述',
-        readonly: true
+        readonly: true,
+        multiline: true
     })
     onDestroyDescArr: string[] = [
         '当组件或者所在节点调用 destroy(), 则会调用 onDestroy 回调, 并在当前帧结束后统一回收组件'
@@ -45,7 +48,8 @@ export default class CClifecycle extends cc.Component {
     @property({
         type: [cc.String],
         displayName: 'start 描述',
-        readonly: true
+        readonly: true,
+        multiline: true
     })
     startDescArr: string[] = [
         'start 会在节点首次激活(activeInHierarchy 为 true 且组件 enabled 为 true)时触发',
@@ -57,7 +61,8 @@ export default class CClifecycle extends cc.Component {
     @property({
         type: [cc.String],
         displayName: 'onEnable 描述',
-        readonly: true
+        readonly: true,
+        multiline: true
     })
     onEnableDescArr: string[] = [
         '当 activeInHierarchy 从 false 变为 true, 且组件的 enabled 属性为 true 时调用',
@@ -72,7 +77,8 @@ export default class CClifecycle extends cc.Component {
     @property({
         type: [cc.String],
         displayName: 'onDisable 描述',
-        readonly: true
+        readonly: true,
+        multiline: true
     })
     onDisableDescArr: string[] = [
         '当 activeInHierarchy 从 true 变为 false, 且组件的 enabled 属性为 true 时调用',
@@ -91,7 +97,8 @@ export default class CClifecycle extends cc.Component {
     @property({
         type: [cc.String],
         displayName: 'update 描述',
-        readonly: true
+        readonly: true,
+        multiline: true
     })
     updateDescArr: string[] = [
         '每一帧渲染前调用'
@@ -104,7 +111,8 @@ export default class CClifecycle extends cc.Component {
     @property({
         type: [cc.String],
         displayName: 'lastUpdate 描述',
-        readonly: true
+        readonly: true,
+        multiline: true
     })
     lastUpdateDescArr: string[] = [
         '所有组件的 update 都执行完之后才调用'

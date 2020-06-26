@@ -6,9 +6,10 @@ export default class CCSystemEvent extends cc.Component {
     @property({
         type: [cc.String],
         displayName: '触摸事件',
-        readonly: true
+        readonly: true,
+        multiline: true
     })
-    summaryArr: string[] = [
+    summaryDescArr: string[] = [
         'touchstart: 当手指触点落在目标节点区域内',
         'touchmove: 当手指在屏幕上移动时',
         'touchend: 当手指在目标节点区域内离开屏幕时',
@@ -48,7 +49,8 @@ export default class CCSystemEvent extends cc.Component {
     @property({
         type: [cc.String],
         displayName: '触摸节点描述',
-        readonly: true
+        readonly: true,
+        multiline: true
     })
     touchNodeDescArr: string[] = [
         'abc 节点都监听了触摸事件',
@@ -60,7 +62,8 @@ export default class CCSystemEvent extends cc.Component {
 
     @property({
         type: [cc.String],
-        displayName: '将触摸注册在捕获阶段'
+        displayName: '将触摸注册在捕获阶段',
+        multiline: true
     })
     captureDescArr: string[] = [
         'node.on(type, callback, target, useCapture), useCapture 为 true',

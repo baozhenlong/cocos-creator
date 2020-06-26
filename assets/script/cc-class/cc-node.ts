@@ -32,7 +32,8 @@ export default class CCNode extends cc.Component {
     @property({
         displayName: '节点 active 描述',
         type: [cc.String],
-        readonly: true
+        readonly: true,
+        multiline: true
     })
     activeDescArr: string[] = [
         '当一个节点是关闭状态时, 它的所有组件都将被禁用；同时, 它所有子节点, 以及子节点上的组件也会跟着被禁用',
@@ -55,7 +56,8 @@ export default class CCNode extends cc.Component {
     @property({
         displayName: '激活节点描述',
         type: [cc.String],
-        readonly: true
+        readonly: true,
+        multiline: true
     })
     enableActiveDescArr: string[] = [
         '当节点 active 从 false 变为 true 时',
@@ -79,7 +81,8 @@ export default class CCNode extends cc.Component {
     @property({
         displayName: '关闭节点描述',
         type: [cc.String],
-        readonly: true
+        readonly: true,
+        multiline: true
     })
     disableActiveDescArr: string[] = [
         '当节点 active 从 true 变为 false 时',
@@ -192,7 +195,8 @@ export default class CCNode extends cc.Component {
 
     @property({
         type: [cc.String],
-        displayName: '销毁节点描述'
+        displayName: '销毁节点描述',
+        multiline: true
     })
     destroyNodeDescArr: string[] = [
         '通过 node.destroy() 可以销毁节点',

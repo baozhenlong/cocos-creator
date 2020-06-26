@@ -11,7 +11,8 @@ export default class CCExecutionSequence extends cc.Component {
     @property({
         type: [cc.String],
         displayName: '概要',
-        readonly: true
+        readonly: true,
+        multiline: true
     })
     summaryDescArr: string[] = [
         '使用统一的脚本来管理其他脚本',

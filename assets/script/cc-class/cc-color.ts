@@ -7,7 +7,8 @@ export default class CCColor extends cc.Component {
     @property({
         displayName: '颜色叠加描述',
         type: [cc.String],
-        readonly: true
+        readonly: true,
+        multiline: true
     })
     overlayDescArr: string[] = [
         'color 属性设置颜色：用纹理的 rgb 与节点的 color 的 rgb 相乘（r*color.r、g*color.g、b*color.b）',
@@ -19,7 +20,8 @@ export default class CCColor extends cc.Component {
     @property({
         displayName: '透明度描述',
         type: [cc.String],
-        readonly: true
+        readonly: true,
+        multiline: true
     })
     opacityDescArr: string[] = [
         '透明度也是 color 属性的一个组成部分',

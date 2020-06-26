@@ -6,9 +6,10 @@ export default class CCKeyboard extends cc.Component {
     @property({
         type: [cc.String],
         displayName: '概要',
-        readonly: true
+        readonly: true,
+        multiline: true
     })
-    summaryArr: string[] = [
+    summaryDescArr: string[] = [
         'KEY_DOWN: 键盘按下',
         'KEY_UP: 键盘释放'
     ];

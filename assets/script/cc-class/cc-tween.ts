@@ -7,9 +7,10 @@ export default class CCTween extends cc.Component {
     @property({
         type: [cc.String],
         displayName: '概要',
-        readonly: true
+        readonly: true,
+        multiline: true
     })
-    summaryArr: string[] = [
+    summaryDescArr: string[] = [
         '链式 API: cc.tween 的每一个 API 都会在内部生成一个 action, 并将这个 action 添加到内部队列中, 在 API 调用完后再返回自身实例',
         '在调用 start 时, 会将之前生成的 action 队列重新组合生成一个 cc.sequence 队列, 依次执行每一个 API'
     ];
@@ -47,7 +48,8 @@ export default class CCTween extends cc.Component {
     @property({
         type: [cc.String],
         displayName: '缓动属性',
-        readonly: true
+        readonly: true,
+        multiline: true
     })
     tweenPropertiesDescArr: string[] = [
         'to: 对属性进行绝对值计算，最终的运行结果即是设置的属性值',

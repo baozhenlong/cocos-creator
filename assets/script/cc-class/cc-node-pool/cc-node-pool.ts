@@ -7,7 +7,8 @@ export default class CCNodePool extends cc.Component {
     @property({
         type: [cc.String],
         displayName: '概要',
-        readonly: true
+        readonly: true,
+        multiline: true
     })
     summaryDescArr: string[] = [
         '在运行时进行节点的创建(cc.instance)和销毁(node.destory)操作是非常耗费性能的',

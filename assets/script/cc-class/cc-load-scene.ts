@@ -6,7 +6,8 @@ export default class LoadScene extends cc.Component {
     @property({
         type: [cc.String],
         displayName: '概要',
-        readonly: true
+        readonly: true,
+        multiline: true
     })
     summaryDescArr: string[] = [
         'addPersistRootNode(ndoe) 声明常驻根节点，该节点必须位于层级的根节点, 否则无效',
