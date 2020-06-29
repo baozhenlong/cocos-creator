@@ -15,6 +15,9 @@
     "_children": [
       {
         "__id__": 2
+      },
+      {
+        "__id__": 6
       }
     ],
     "_active": true,
@@ -58,7 +61,7 @@
     "_groupIndex": 0,
     "groupIndex": 0,
     "autoReleaseAssets": false,
-    "_id": "58dee5f0-cf81-43f4-8094-b44d6d67a720"
+    "_id": "afd9f1b7-7e84-4299-8510-25fec7ef29e8"
   },
   {
     "__type__": "cc.Node",
@@ -70,15 +73,12 @@
     "_children": [
       {
         "__id__": 3
-      },
-      {
-        "__id__": 5
       }
     ],
     "_active": true,
     "_components": [
       {
-        "__id__": 8
+        "__id__": 5
       }
     ],
     "_prefab": null,
@@ -127,7 +127,7 @@
     "_is3DNode": false,
     "_groupIndex": 0,
     "groupIndex": 0,
-    "_id": "2bk1p2entCkYFw6RRO6DGs"
+    "_id": "af91zFPjBKUL7KWbARYSCR"
   },
   {
     "__type__": "cc.Node",
@@ -168,7 +168,7 @@
       "array": [
         0,
         0,
-        455.5293623906148,
+        447.0856147037165,
         0,
         0,
         0,
@@ -189,7 +189,7 @@
     "_is3DNode": false,
     "_groupIndex": 0,
     "groupIndex": 0,
-    "_id": "76HNoCi6tO/6hGw8zoVz/y"
+    "_id": "70BP9qVkpCv6R8YG6YGnCO"
   },
   {
     "__type__": "cc.Camera",
@@ -225,21 +225,35 @@
     },
     "_renderStages": 1,
     "_alignWithScreen": true,
-    "_id": "813sZfw6FDfJZASPuwEXdT"
+    "_id": "34MVkd8Q1FW4SCM+/qcf5n"
+  },
+  {
+    "__type__": "cc.Canvas",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 2
+    },
+    "_enabled": true,
+    "_designResolution": {
+      "__type__": "cc.Size",
+      "width": 960,
+      "height": 640
+    },
+    "_fitWidth": false,
+    "_fitHeight": true,
+    "_id": "33J3pKdJBKJ7V0hCys90Rs"
   },
   {
     "__type__": "cc.Node",
-    "_name": "star",
+    "_name": "cc-camera",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 2
+      "__id__": 1
     },
     "_children": [],
     "_active": true,
     "_components": [
-      {
-        "__id__": 6
-      },
       {
         "__id__": 7
       }
@@ -255,8 +269,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 169,
-      "height": 201
+      "width": 0,
+      "height": 0
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -267,8 +281,8 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        -10,
-        50,
+        0,
+        0,
         0,
         0,
         0,
@@ -290,65 +304,25 @@
     "_is3DNode": false,
     "_groupIndex": 0,
     "groupIndex": 0,
-    "_id": "76iB6ysZNDYJ2TkNSH+7tV"
+    "_id": "55lpcvfRdC9pXErS6AuFYR"
   },
   {
-    "__type__": "cc.Sprite",
+    "__type__": "b8db0C6WrBFhoDvARNI15U3",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 5
+      "__id__": 6
     },
     "_enabled": true,
-    "_materials": [
-      {
-        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
-      }
+    "propertiesDescArr": [
+      "backgroundColor: 使用设定的背景色来清除场景",
+      "depth: 摄像机深度, 用于决定摄像机的渲染顺序, 值越大, 则摄像机越晚被渲染",
+      "cullingMask: 决定这个摄像机用来渲染场景的哪些部分, 分组即对应的 mask",
+      "clearFlags: 指定渲染摄像机时需要做的清除操作",
+      "rect: 决定摄像机绘制在屏幕上的哪个区域",
+      "zoomRatio: 指定摄像机的缩放比例, 值越大显示的图像越大",
+      "alignWithScreen: 为 true 时摄像机会自动将视窗大小调整为整个屏幕的大小"
     ],
-    "_srcBlendFactor": 770,
-    "_dstBlendFactor": 771,
-    "_spriteFrame": {
-      "__uuid__": "430aa928-e0bd-4b9b-bb22-b5bb975dad4a"
-    },
-    "_type": 0,
-    "_sizeMode": 2,
-    "_fillType": 0,
-    "_fillCenter": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
-    },
-    "_fillStart": 0,
-    "_fillRange": 0,
-    "_isTrimmedMode": false,
-    "_atlas": null,
-    "_id": "f59VrjNhBIh5I4oVTljRQH"
-  },
-  {
-    "__type__": "04dafUSGA9ACZXTWtiZq/kE",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 5
-    },
-    "_enabled": true,
-    "_id": "f5IA/kKe9GE7AO5iefbS94"
-  },
-  {
-    "__type__": "cc.Canvas",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 2
-    },
-    "_enabled": true,
-    "_designResolution": {
-      "__type__": "cc.Size",
-      "width": 960,
-      "height": 640
-    },
-    "_fitWidth": false,
-    "_fitHeight": true,
-    "_id": "4fiSMLQzNBHp7NgB+d3KZ3"
+    "_id": "32krpPgbVC2J2O0A8YpLrM"
   }
 ]

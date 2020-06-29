@@ -15,6 +15,9 @@
     "_children": [
       {
         "__id__": 2
+      },
+      {
+        "__id__": 6
       }
     ],
     "_active": true,
@@ -58,7 +61,7 @@
     "_groupIndex": 0,
     "groupIndex": 0,
     "autoReleaseAssets": false,
-    "_id": "58dee5f0-cf81-43f4-8094-b44d6d67a720"
+    "_id": "3e00f379-982f-4e4a-bcae-999b644d876e"
   },
   {
     "__type__": "cc.Node",
@@ -70,15 +73,12 @@
     "_children": [
       {
         "__id__": 3
-      },
-      {
-        "__id__": 5
       }
     ],
     "_active": true,
     "_components": [
       {
-        "__id__": 8
+        "__id__": 5
       }
     ],
     "_prefab": null,
@@ -127,7 +127,7 @@
     "_is3DNode": false,
     "_groupIndex": 0,
     "groupIndex": 0,
-    "_id": "2bk1p2entCkYFw6RRO6DGs"
+    "_id": "f6DYySTAJMj7nFwQ0d/SdC"
   },
   {
     "__type__": "cc.Node",
@@ -189,7 +189,7 @@
     "_is3DNode": false,
     "_groupIndex": 0,
     "groupIndex": 0,
-    "_id": "76HNoCi6tO/6hGw8zoVz/y"
+    "_id": "97DSILUZ9J150K1uXz7K4b"
   },
   {
     "__type__": "cc.Camera",
@@ -225,21 +225,35 @@
     },
     "_renderStages": 1,
     "_alignWithScreen": true,
-    "_id": "813sZfw6FDfJZASPuwEXdT"
+    "_id": "6emFy+QJxLdYxTl2zWQ0wx"
+  },
+  {
+    "__type__": "cc.Canvas",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 2
+    },
+    "_enabled": true,
+    "_designResolution": {
+      "__type__": "cc.Size",
+      "width": 960,
+      "height": 640
+    },
+    "_fitWidth": false,
+    "_fitHeight": true,
+    "_id": "2dtnlq2K9Fk5TKfqcxC/vA"
   },
   {
     "__type__": "cc.Node",
-    "_name": "star",
+    "_name": "cc-adaptation",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 2
+      "__id__": 1
     },
     "_children": [],
     "_active": true,
     "_components": [
-      {
-        "__id__": 6
-      },
       {
         "__id__": 7
       }
@@ -255,8 +269,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 169,
-      "height": 201
+      "width": 0,
+      "height": 0
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -267,8 +281,8 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        -10,
-        50,
+        0,
+        0,
         0,
         0,
         0,
@@ -290,65 +304,33 @@
     "_is3DNode": false,
     "_groupIndex": 0,
     "groupIndex": 0,
-    "_id": "76iB6ysZNDYJ2TkNSH+7tV"
+    "_id": "4cyrzbokxPQaj+IiZjSbwa"
   },
   {
-    "__type__": "cc.Sprite",
+    "__type__": "bb50ePzzKNBVLYxi8PvqIue",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 5
+      "__id__": 6
     },
     "_enabled": true,
-    "_materials": [
-      {
-        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
-      }
+    "descArr": [
+      "Canvas: 画布, 组件随时获得设备屏幕的实际分辨率, 并对场景中所有渲染元素进行适当的缩放",
+      "Widget: 对齐挂件, 放置在渲染元素上, 能够根据需要将元素对齐父节点的不同参考位置",
+      "Label: 文字, 组件内置了各种动态文字排版模式的功能, 当文字的约束框由于 Widget 对齐要求发生变化时, 文字会根据需要呈现完美的排版效果",
+      "Sliced Sprite: 九宫格精灵图, 提供了可任意指定尺寸的图像, 同样可以满足各式各样的对齐要求, 在任何屏幕分辨率上都显示高精度的图像"
     ],
-    "_srcBlendFactor": 770,
-    "_dstBlendFactor": 771,
-    "_spriteFrame": {
-      "__uuid__": "430aa928-e0bd-4b9b-bb22-b5bb975dad4a"
-    },
-    "_type": 0,
-    "_sizeMode": 2,
-    "_fillType": 0,
-    "_fillCenter": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
-    },
-    "_fillStart": 0,
-    "_fillRange": 0,
-    "_isTrimmedMode": false,
-    "_atlas": null,
-    "_id": "f59VrjNhBIh5I4oVTljRQH"
-  },
-  {
-    "__type__": "04dafUSGA9ACZXTWtiZq/kE",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 5
-    },
-    "_enabled": true,
-    "_id": "f5IA/kKe9GE7AO5iefbS94"
-  },
-  {
-    "__type__": "cc.Canvas",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 2
-    },
-    "_enabled": true,
-    "_designResolution": {
-      "__type__": "cc.Size",
-      "width": 960,
-      "height": 640
-    },
-    "_fitWidth": false,
-    "_fitHeight": true,
-    "_id": "4fiSMLQzNBHp7NgB+d3KZ3"
+    "designResolutionDescArr": [
+      "制作场景时使用的分辨率",
+      "android: 800x640, 1280x720",
+      "ios: 1136x640, 960x640"
+    ],
+    "screenResolutionDescArr": [
+      "游戏在设备上运行时的实际屏幕显示分辨率"
+    ],
+    "widgetDescArr": [
+      "ON_WINDOW_RESIZE ONCE: 一般"
+    ],
+    "_id": "a2OVar8ixG/IUdPpvtNAWZ"
   }
 ]
