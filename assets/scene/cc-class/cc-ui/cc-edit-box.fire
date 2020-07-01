@@ -722,8 +722,8 @@
     "target": {
       "__id__": 17
     },
-    "component": "",
-    "_componentId": "600b5wPOaJEjoTXNqP08dkZ",
+    "component": "cc-edit-box",
+    "_componentId": "",
     "handler": "onEditingDidBegan",
     "customEventData": "开始编辑"
   },
@@ -821,8 +821,8 @@
     "target": {
       "__id__": 17
     },
-    "component": "",
-    "_componentId": "600b5wPOaJEjoTXNqP08dkZ",
+    "component": "cc-edit-box",
+    "_componentId": "",
     "handler": "onTextChanged",
     "customEventData": "编辑"
   },
@@ -831,8 +831,8 @@
     "target": {
       "__id__": 17
     },
-    "component": "",
-    "_componentId": "600b5wPOaJEjoTXNqP08dkZ",
+    "component": "cc-edit-box",
+    "_componentId": "",
     "handler": "onEditingDidEnded",
     "customEventData": "结束编辑"
   },
@@ -841,8 +841,8 @@
     "target": {
       "__id__": 17
     },
-    "component": "",
-    "_componentId": "600b5wPOaJEjoTXNqP08dkZ",
+    "component": "cc-edit-box",
+    "_componentId": "",
     "handler": "onEditingReturn",
     "customEventData": "按下回车"
   },
