@@ -12,7 +12,7 @@ export default class CCButton extends cc.Component {
 
     onLoad() {
         if (this.btn) {
-            this.btn.clickEvents.length = 0
+            this.btn.clickEvents.length = 0;
             let eventHandler: cc.Component.EventHandler = new cc.Component.EventHandler();
             // 事件响应函数所在节点
             eventHandler.target = this.node;
