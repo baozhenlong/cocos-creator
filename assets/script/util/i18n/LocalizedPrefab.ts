@@ -1,11 +1,10 @@
-import LinkedSprite from "../linked/LinkedSprite";
+import LinkedPrefab from "../linked/LinkedPrefab";
 import LanguageMgr, { LanguageEnum } from "./LanguageMgr";
 
 const { ccclass, property, menu } = cc._decorator;
-
 @ccclass
-@menu('多语言/图片')
-export default class LocalizedSprite extends LinkedSprite {
+@menu('多语言/预制体')
+export default class LocalizedPrefab extends LinkedPrefab {
 
     @property
     private _language: LanguageEnum = LanguageEnum.简体中文;
@@ -16,7 +15,7 @@ export default class LocalizedSprite extends LinkedSprite {
     })
     protected set language(value: LanguageEnum) {
         this._language = value;
-        this.refresh();
+        this.preview();
     }
     protected get language(): LanguageEnum {
         return this._language;

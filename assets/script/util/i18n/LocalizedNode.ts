@@ -25,7 +25,7 @@ interface NodeProps {
 };
 
 @ccclass
-@menu('多语言/节点数据')
+@menu('多语言/节点属性')
 @executeInEditMode
 export default class LocalizedNode extends cc.Component {
 

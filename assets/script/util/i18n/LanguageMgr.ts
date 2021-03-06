@@ -5,6 +5,8 @@ export enum LanguageEnum {
     英文
 }
 
+const REPLACE_MODE: string = '##XDGKZY##';
+
 class LanguageMgr {
 
     private _polyglot = null;
@@ -68,6 +70,31 @@ class LanguageMgr {
         return text;
     }
 
+    getLanguageDataByURL(url: string): {
+        languageIndex: number,
+        resURL: string
+    } {
+        let languageKey: string;
+        let languageIndex: number;
+        for (let i = 0; i < this.languageKeyArr.length; i++) {
+            let key: string = this.languageKeyArr[i];
+            if (url.includes(`${key}`)) {
+                languageKey = key;
+                languageIndex = i;
+                break;
+            }
+        }
+        let resURL: string = url.replace(`/${languageKey}/`, REPLACE_MODE);
+        return {
+            languageIndex,
+            resURL
+        };
+    }
+
+    checkResURL(resURL: string): string {
+        let url: string = resURL.replace(REPLACE_MODE, `/${this.getLanguageKey(this.currentLanguage)}/`);
+        return url;
+    }
+
 }
-// let LanguageMgr: _LanguageMgr = new _LanguageMgr();
 export default new LanguageMgr;
